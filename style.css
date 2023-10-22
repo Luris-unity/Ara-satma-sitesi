@@ -1,0 +1,169 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+body {
+	font-family: sans-serif;
+	background: rgb(27, 27, 27);
+}
+
+ul{
+	list-style: none;
+	margin: 0 auto;
+	text-align: center;
+	background: rgb(2,0,36);
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,9,121,1) 100%, rgba(0,212,255,1) 100%);
+	color: whitesmoke;
+
+}
+
+ul li {
+	display: inline-block;
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+ul li a:hover{
+	color: red;
+}
+
+ul li a::before{
+	content: "{";
+	margin-right: -5px;
+	opacity: 0;
+	transition: all 0.5s;
+
+}
+
+ul li a::after{
+	content: "}";
+	margin-left: -5px;
+	opacity: 0;
+	transition: all 0.5s;
+
+}
+
+ul li a:hover:before{
+	opacity: 1;
+	margin-right: 10px;
+}
+
+ul li a:hover:after{
+	opacity: 1;
+	margin-left: 10px;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+
+.container-1{
+	  border: 1px solid;
+  	  padding: 20px;
+  	  height: 150px;
+ 	  box-shadow: 10px 5px;
+ 	  color: whitesmoke;
+}
+
+.container-1 h2{
+	padding: 10px
+}
+
+.container-2{
+	border: 1px solid;
+	padding: 20px;
+	height: 250px;
+	box-shadow: 5px 1px;
+	color: whitesmoke;
+}
+
+.container-3{
+	border: 1px solid;
+	padding: 20px;
+	height: 250px;
+	box-shadow: 5px 1px;
+	color: whitesmoke;
+}
+
+
+
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+
+.card {
+	background: white;
+	width: 270px;
+	margin: 10px;
+	border-radius: 15px
+}
+
+.card-image {
+	height: 200px;
+	margin-bottom: 15px;
+	background-size: cover;
+	border-radius: 15px 15px 0 0;
+}
+
+.car-1 {
+	background-image: url(file:///C:/Users/casper/Desktop/Araba%20sat%C4%B1%C5%9F%20sitesi/res%C4%B1mler/bmw_onden.jpg);
+}
+
+.car-2 {
+	background-image: url(file:///C:/Users/casper/Desktop/Araba%20sat%C4%B1%C5%9F%20sitesi/res%C4%B1mler/bmw_e60.jpg);
+}
+
+.car-3 {
+	background-image: url(file:///C:/Users/casper/Desktop/Araba%20sat%C4%B1%C5%9F%20sitesi/res%C4%B1mler/bmw_coupe.jpg);
+}
+
+.car-4 {
+	background-image: url(file:///C:/Users/casper/Desktop/Araba%20sat%C4%B1%C5%9F%20sitesi/res%C4%B1mler/bmw_1.jpg);
+}
+
+.car-5 {
+	background-image: url(file:///C:/Users/casper/Desktop/Araba%20sat%C4%B1%C5%9F%20sitesi/res%C4%B1mler/bmw_2.jpg);
+}
+
+.car-6 {
+	background-image: url(file:///C:/Users/casper/Desktop/Araba%20sat%C4%B1%C5%9F%20sitesi/res%C4%B1mler/bmw_3.jpg);
+}
+
+.card h2 {
+	padding: 10px;
+}
+
+.card p {
+	padding: 10px;
+}
+
+.card a {
+	background-color: black;
+	color: white;
+	padding: 15px 20px;
+	display: block;
+	text-align: center;
+	margin: 20px 50px;
+	text-decoration: none;
+}
+
+.card:hover{
+	background-color: rgb(62, 62, ,62);
+	color: white;
+	cursor: pointer;
+	transform: scale(1.03);
+	transition: all 1s ease;
+}
